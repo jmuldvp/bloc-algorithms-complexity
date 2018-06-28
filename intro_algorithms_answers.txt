@@ -1,0 +1,59 @@
+1. Using proper pseudo-code, describe three or more primitive algorithms used in your day-to-day life. Write your answers in a file called intro_algorithms_answers.txt.
+
+Preparing my computer at work (getting ready for the day):
+  a. Login to the computer/network.
+  b. Open email to see if I was sent any new requests for data assistance.
+    i. Depending on what is in email will determine the apps I open on my computer.
+  c. If I have web testing requests, open browser and remote into apps server.
+  d. If I have data requests, open SQL tools and depending on the request, prepare to create a report the user can run on their own.
+  e. If I have meetings that need prep work, open appropriate application(s).
+
+Determining what to wear:
+  a. Determine what clothes are clean.
+    i. Do I have a pair of clean pants?
+    ii. Do I have a clean shirt?
+  b. If I find clean cloths...
+    i. Does my shirt and my pants match in the slightest?
+  c. If I don't find clean clothes...
+    i. Find the cleanest pair of pants and the cleanest shirt that I didn't wear recently.
+
+When to create a new SQL report:
+  a. Listen to or read thru report request and ask myself these questions...
+    i. Do we already have an existing report?
+    ii. Does the report need to be sent externally?
+    iii. Does the report need to be run more than once?
+  b. If we don't have existing report, use appropriate tools to create one.
+  c. If we do have an
+
+2. Write an algorithm to solve the Fibonnaci Sequence in Ruby using iteration. For example, if given a number n, return fib(n) such that fib(n) = the nth number in the fibonacci sequence. Your program should print out the first ten values of the Fibonnaci sequence.
+
+Here is the pseudocode implementation of the iterative version of the Fibonnaci sequence:
+
+DEF FIB(n)
+  SET fib_0 to 0
+  SET fib_1 to 1
+  FOR each value from 0 to one less than n
+    SET temp to fib_0
+    ASSIGN fib_1 to fib_0
+    COMPUTE temp + fib_1, ASSIGN to fib_1
+  END FOR
+  RETURN fib_1
+END DEF
+Use this pseudocode and the following code snippet as a starting point to implement an iterative solution to the Fibonnaci sequence, save the file as fibonacci_iterative.rb:
+
+fibonacci_iterative.rb
+ def fib(n)
+   # Add functionality here
+ end
+
+ puts fib(0)
+ puts fib(1)
+ puts fib(2)
+ puts fib(3)
+ puts fib(4)
+ puts fib(5)
+ puts fib(6)
+ puts fib(7)
+ puts fib(8)
+ puts fib(9)
+Add intro_algos_answers.txt and fibonacci_iterative.rb to a new commit named "Intro to algorithms solutions". Submit your commit to your mentor.
