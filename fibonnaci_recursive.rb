@@ -1,15 +1,16 @@
 require 'benchmark'
 
 def fib(n)
-   # Add functionality here
-  fib_0 = 0
-  fib_1 = 1
-  (fib_0..n-1).each do
-    temp = fib_0
-    fib_0 = fib_1
-    fib_1 = temp + fib_1
+  if (n == 0)
+    # #1
+    return 0
+  elsif (n == 1)
+    # #2
+    return 1
+  else
+    # #3
+    return fib(n-1) + fib(n-2)
   end
-  return fib_1
 end
 
 # puts fib(0)
