@@ -58,7 +58,7 @@ def numbers(n)
 end
 ```
 
-Answer: Either O(n^2)
+Answer: O(2^n)
 Reasoning: For every recursion, it calls itself twice.
 
 >5. What's the Big-O of the following algorithm? Submit your work and reasoning with your solution.
@@ -136,5 +136,5 @@ def sort(collection, from=0, to=nil)
 end
 ```
 
-Answer: O(log n)
-Reason: The most complex part of this is the while lopp with nested if statements. It seems like it divides the collection with each iteration.
+Answer: O(n log n)
+Reason: The most complex part of this is the while loop with nested if statements. It seems like it divides the collection with each iteration.  Because of `if` statements, it makes it linear. Because of the nested `if` statement, the number of iterations increase the larger n gets.
