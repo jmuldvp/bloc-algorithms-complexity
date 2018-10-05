@@ -19,7 +19,7 @@ def poorly_written_ruby(*arrays)
         sorted_array << val
         break
       end
-      i+=1
+      i += 1
     end
   end
 
