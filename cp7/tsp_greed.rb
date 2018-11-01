@@ -1,5 +1,3 @@
-# Structs, OStructs, built-in Math and Time classes, Procs and then Lambdas.
-
 # Creating a struct instead of creating a class that I'd have to "require"
 City = Struct.new(:city, :x, :y)
 
